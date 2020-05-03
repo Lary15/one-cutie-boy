@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #f6e1c1;
+}
+
+.box {
+  position: fixed;
+  width: 60vw;
+  left: 19vw;
+  bottom: -0.25rem;
+  overflow: auto;
+}
+
+.title {
+  z-index: 2;
+  color: #debba7;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+}
+
+.title:hover {
+  color: #d8ad96
+}
+
+.speak-bubble div {
+  height: auto;
+  width: auto;
+  font-family: 'Fredoka One', cursive;
+  font-size: 5px;
+  text-align: center;
+}
+
+.speak-bubble {
+  opacity: 0%;
+}
+
+.run-bubble-animation {  
+  animation-name: hideshow;
+  animation-duration: 6s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes hideshow {
+  0% {opacity: 0%;}
+  7% {opacity: 50%;}
+  14% {opacity: 75%;}
+  21% {opacity: 100%;}
+  90% {opacity: 90%;}
+  100% {opacity: 0%;}
+}
+
+.blush {
+  opacity: 0;
+}
+
+@keyframes blushing {
+  0% {fill-opacity: 0.12;}
+  20% {fill-opacity: 0.245;}
+  40% {fill-opacity: 0.459%;}
+  60% {fill-opacity: 0.768%;}
+  80% {fill-opacity: 0.345%;}
+  100% {fill-opacity: 0;}
+}
+
+.share {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.45rem 0.75rem
+}
